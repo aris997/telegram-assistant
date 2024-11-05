@@ -1,2 +1,6 @@
 secrets.yaml
 .venv
+**/logs
+**/__pycache__
+test.*
+*.backup
