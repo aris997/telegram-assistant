@@ -10,5 +10,4 @@ def set(token, webhook) -> bool:
     if j_resp.get("ok", False):
         return j_resp["description"]
     else:
-        return "not ok"
-
+        return "no ok"
