@@ -4,11 +4,10 @@ This is a personal project for a telegram chatbot connected to ChatGPT by OpenAI
 
 Features to develope:
 
-- [ ] Simple question response behavior
-- [ ] Audio simple response behavior (maybe with whisper in local or whisper API for a better experience)
-- [ ] Check the API live Chat with ChatGPT
-
-- [ ] Memory behavior
+- Simple question response behavior
+- Audio simple response behavior (maybe with whisper in local or whisper API for a better experience)
+- Check the API live Chat with ChatGPT
+- Memory behavior
 
 ## I would like
 
@@ -19,4 +18,3 @@ a simple way to edit the main command so the first part of the message should go
 - a layer based on the numbers of intents I have.
 
 I also need to know how many layers is good to go. And how to build a RNN or a transformer. I just have some studies to do.
-
