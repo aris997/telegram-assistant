@@ -51,13 +51,13 @@ async def messager(request: Request):
             bot_message = completion.choices[0].message.content
         elif ECHO:
             logger.debug('echo mode')
-            bot_message = user_message
+            bot_message = "_" + user_message + "_"
         else:
             logger.error('echo not set')
             bot_message = 'error FLAG ECHO not set.'
     else:
-        logger.error("not a text message")
-        bot_message = f"Sorry, issues encountered. You sent a \*{message_type[0]}\*. Check datatype you sent."
+        logger.error(f"not a text message, {message_type = }")
+        bot_message = rf"Sorry, issues encountered\. You sent a *{message_type[0]}*\. Check datatype you sent\."
 
     message = {
         "chat_id" : chat_id,
@@ -74,4 +74,4 @@ if __name__ == "__main__":
     print(f"Ingress established at {listener.url()}")
     print(telegram_endpoint.set(secrets['TELEGRAM_BOT_TOKEN'], listener.url()))
     sleep(1)
-    uvicorn.run("main:app", host = "0.0.0.0", port = 8001, reload = False)
+    uvicorn.run("main:app", host = "0.0.0.0", port = 8001, reload = True)
