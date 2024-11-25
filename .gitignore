@@ -5,3 +5,4 @@ secrets.yaml
 test.*
 *.backup
 incoming_payloads
+.ruff_cache
