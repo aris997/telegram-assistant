@@ -1,6 +1,5 @@
 import requests
 
-
 def set(token, webhook) -> bool:
     URL = "https://api.telegram.org/bot{set_token}/setWebhook?url={webhook}/webhook"
 
